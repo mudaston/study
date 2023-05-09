@@ -1,1 +1,1 @@
-export { compose } from './compose'
+export { default as compose } from './compose'

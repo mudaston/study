@@ -5,4 +5,4 @@ const compose =
 	(value: T) =>
 		args.reduceRight((result, func) => func(result), value)
 
-export { compose }
+export default compose
