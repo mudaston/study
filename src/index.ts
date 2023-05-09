@@ -1,14 +1,14 @@
-import { List } from './linked-list/linked-list'
+import { pipe } from './pipe'
+import {
+	toLowerCase,
+	trim,
+	whitespaceToUnderscore,
+} from './pipe/test-functions'
 
-// console.log(0.1 + 0.2 === 0.3)
-// console.log((0.3).toFixed(17))
-// console.log(0.1 + 0.2)
-// console.log(0.1 + 0.2 - 0.3 <= Number.EPSILON)
+const str = ' TEST STRING '
 
-const list = new List()
+const pipeStr = pipe(toLowerCase, trim, whitespaceToUnderscore)
 
-for (let i = 0; i < 5; i++) {
-	list.append(i)
-}
+const pipedStr = pipeStr(str)
 
-console.log(list.at(-1))
+console.log(pipedStr)
