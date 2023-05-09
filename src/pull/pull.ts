@@ -1,6 +1,6 @@
 import { Node } from '../single-node'
 
-class Pull<T> {
+class Pool<T> {
 	private Head?: Node<T>
 	private Length: number
 	private Capacity: number
@@ -51,4 +51,4 @@ class Pull<T> {
 	}
 }
 
-export { Pull }
+export default Pool

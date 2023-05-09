@@ -1,1 +1,1 @@
-export { Pull } from './pull'
+export { default as Pool } from './pull'
