@@ -5,4 +5,4 @@ const pipe =
 	(value: T) =>
 		args.reduce((result, func) => func(result), value)
 
-export { pipe }
+export default pipe
