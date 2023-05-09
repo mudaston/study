@@ -1,1 +1,1 @@
-export { Node } from './single-node'
+export { default as Node } from './single-node'

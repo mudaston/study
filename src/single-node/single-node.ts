@@ -10,4 +10,4 @@ class Node<T> {
 	toString = () => String(this.value)
 }
 
-export { Node }
+export default Node
