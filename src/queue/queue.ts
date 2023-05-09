@@ -1,16 +1,16 @@
 import { Node } from '../single-node'
-import { Pull } from '../pull'
+import { Pool } from '../pull'
 
 class Queue<T> {
 	private Head?: Node<T>
 	private Tail?: Node<T>
-	private Pull: Pull<T>
+	private Pull: Pool<T>
 
 	private Length: number
 
 	constructor(capacity?: number) {
 		this.Length = 0
-		this.Pull = new Pull<T>(capacity)
+		this.Pull = new Pool<T>(capacity)
 	}
 
 	public get length(): number {
