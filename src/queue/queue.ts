@@ -1,5 +1,5 @@
 import { Node } from '../single-node'
-import { Pool } from '../pull'
+import { Pool } from '../pool'
 
 class Queue<T> {
 	private Head?: Node<T>
