@@ -43,7 +43,7 @@ class Queue<T> {
 		this.Tail = node
 	}
 
-	deque(): T | undefined {
+	dequeue(): T | undefined {
 		if (!this.Head) return undefined
 
 		const currentNode = this.Head
