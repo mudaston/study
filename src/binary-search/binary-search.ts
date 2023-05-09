@@ -24,4 +24,4 @@ const binarySearch = <T>(array: T[], key: T): number => {
 	return -1
 }
 
-export { binarySearch }
+export default binarySearch
