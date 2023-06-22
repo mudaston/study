@@ -1,5 +1,5 @@
 import { List } from './linked-list'
-import { Node } from './node'
+import { Node } from '../double-node'
 
 interface User {
 	name: string

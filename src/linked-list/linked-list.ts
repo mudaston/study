@@ -1,4 +1,4 @@
-import { Node } from './node'
+import { Node } from '../double-node'
 import type { Predicate } from './types'
 
 class List<T> {
