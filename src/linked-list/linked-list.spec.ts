@@ -1,5 +1,5 @@
 import { List } from './linked-list'
-import { Node } from '../double-node'
+import { DoubleNode } from '../double-node'
 
 interface User {
 	name: string
@@ -75,7 +75,7 @@ describe('linked list', () => {
 	})
 
 	it('test Node toString() method', () => {
-		const node = new Node(1)
+		const node = new DoubleNode(1)
 
 		const testValue = node.toString()
 		const expectedValue = '1'

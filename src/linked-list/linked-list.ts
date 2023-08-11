@@ -1,9 +1,9 @@
-import { Node } from '../double-node'
+import { DoubleNode } from '../double-node'
 import type { Predicate } from './types'
 
 class List<T> {
-	private Head?: Node<T>
-	private Tail?: Node<T>
+	private Head?: DoubleNode<T>
+	private Tail?: DoubleNode<T>
 	private Length: number = 0
 
 	get length() {
@@ -74,7 +74,7 @@ class List<T> {
 
 	// O(1)
 	prepend(value: T) {
-		const node = new Node<T>(value)
+		const node = new DoubleNode<T>(value)
 
 		if (!this.Head || !this.Tail) {
 			this.Head = node
@@ -94,7 +94,7 @@ class List<T> {
 
 	// O(1)
 	append(value: T) {
-		const node = new Node<T>(value)
+		const node = new DoubleNode<T>(value)
 
 		if (!this.Head || !this.Tail) {
 			this.Head = node
@@ -133,8 +133,8 @@ class List<T> {
 			reverse ? this.Tail : this.Head
 
 		const strategy = {
-			next: (node?: Node<T>) => node?.next,
-			prev: (node?: Node<T>) => node?.prev,
+			next: (node?: DoubleNode<T>) => node?.next,
+			prev: (node?: DoubleNode<T>) => node?.prev,
 		}
 
 		const getDirection = (reverse: boolean) => (reverse ? 'prev' : 'next')
