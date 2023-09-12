@@ -1,4 +1,4 @@
-const binarySEARCHNEXT = <T>(array: T[], key: T): number => {
+const binarySEARCHMAIN = <T>(array: T[], key: T): number => {
 	let low = 0
 	let high = array.length
 
@@ -24,4 +24,4 @@ const binarySEARCHNEXT = <T>(array: T[], key: T): number => {
 	return -1
 }
 
-export { binarySEARCHNEXT as binarySEARCH }
+export { binarySEARCHMAIN as binarySEARCH }
